@@ -1,0 +1,9 @@
+<div class="stepper-consultation">
+    <ul class="step-bar">
+        <li *ngFor="let stepper of listStepper" [ngClass]="stepper.active ? 'active' : ''">
+            {{stepper.title}}
+        </li>
+       
+      </ul>
+</div>
+

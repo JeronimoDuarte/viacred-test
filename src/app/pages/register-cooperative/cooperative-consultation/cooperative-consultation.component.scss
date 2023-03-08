@@ -1,0 +1,39 @@
+.step-bar-consultation{
+    padding: 5% 0;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .consult-cpf{
+        position: relative;
+        display: inline-flex;
+        input{
+            padding: 10px 20px;
+            min-width: 270px;
+        }
+        button{
+            width: 172px;
+            height: 40px;
+            background-color: var(--primaryColor);
+            color: #fff;
+            border: none;
+            margin-left: 5px;
+         
+        }
+    }
+
+    .disable{
+        opacity: 0.5;
+    }
+    .invalid-data{
+        width: 30%;
+        color: var(--errorColor);
+        border-radius: 2px;
+        margin: 5px 0;
+    }
+}
+app-card-consultation{
+    margin-top: 20px;
+}

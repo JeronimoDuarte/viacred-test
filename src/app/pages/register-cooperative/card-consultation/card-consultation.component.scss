@@ -1,0 +1,62 @@
+.card-consultation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--whithColor);
+    min-width: 270px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    h4,
+    span {
+        line-height: 0;
+    }
+
+    span {
+        color: var(--labelColor);
+    }
+
+    .informations {
+        list-style: none;
+        padding: 0;
+
+        .item-information {
+            position: relative;
+            display: inline-flex;
+            justify-content: stretch;
+            align-items: center;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+
+                i {
+                    line-height: 40px;
+                    font-size: 20px;
+                }
+            }
+
+            .active {
+                color: var(--activeColor);
+            }
+
+            .inactive {
+                color: var(--labelColor);
+            }
+
+            .information {
+
+                p {
+                    font-size: 14px;
+                    text-transform: capitalize;
+
+                    span {
+                        color: var(--labelColor);
+                    }
+                }
+            }
+        }
+    }
+}

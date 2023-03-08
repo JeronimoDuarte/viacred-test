@@ -1,0 +1,134 @@
+@import './variables.scss';
+@import './font.scss';
+
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--defaultFont);
+    color: var(--titleColor);
+    margin: 0;
+    padding: 0;
+    background-color: var(--whithColor);
+    h2{
+        color: var(--titleColor);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 0;
+    }
+    h3{
+        color: var(--titleColor);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 0;
+    }
+    p{
+        color: var(--titleColor);
+        font-size: 12px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+        grid-template-rows: auto auto  auto;
+        grid-template-areas:
+            "aside header"
+            "aside main"
+            "aside footer";
+        grid-column-gap: 0;
+
+        app-header {
+            grid-area: header;
+            grid-column-start: 1;
+            grid-column-end: 10;
+            background-color: var(--whithColor);
+            color: #fff;
+            padding: 15px 20px 1px 125px ;
+            
+      
+        }
+        app-footer {
+            grid-area: footer;
+            /* área do footer */
+            grid-column-start: 1;
+            grid-column-end: 11;
+            background-color: var(--whithColor);
+            color: #fff;
+            padding: 10px;
+            padding-left: 125px;
+        }
+        .btn-default{
+            padding: 15px;
+            font-size: 16px;
+            background-color: var(--primaryColor);
+            color: var(--whithColor);
+            border: none;
+        }
+        .btn-outline{
+            padding: 15px;
+            font-size: 16px;
+            background-color: var(--whithColor);
+            color: var(--primaryColor);
+            border: 2px solid var(--primaryColor);
+        }
+        main {
+            grid-area: main;
+            /* área do corpo */
+            background-color: var(--bodyColor);
+            min-height: 65vh;
+            grid-column-start: 1;
+            grid-column-end: 11;  
+            padding-left: 125px;
+            padding-bottom: 5%;
+       
+        }
+        app-navigation {
+            grid-area: aside;
+            width: 100px;
+            /* área do menu lateral */
+            nav#menu {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                top: 0;
+                width: 100px;
+                background-color: var(--primaryColor);
+                padding: 0;
+                margin: 0;
+
+                .logo {
+                    margin: 12px 0;
+                }
+
+                ul {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 auto;
+                    width: 100px;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        line-height: 48px;
+
+                        a>img {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}

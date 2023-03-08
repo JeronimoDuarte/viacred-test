@@ -1,0 +1,30 @@
+body{
+    //fonts
+    --defaultFont: 'Open Sans', sans-serif; 
+    //icones
+
+
+    //colors
+    --bodyColor: #D8D8D8;
+    --whithColor: #ffffff;
+    --primaryColor: #165C7D;
+    --titleColor: #101213;
+    --labelColor: #787878;
+    --errorColor: #C13018;
+    --alertColor: red;
+    --activeColor: #00C246;
+
+}
+
+$variables:(
+    --bodyColor: var(--bodyColor), 
+    --defaultFont: var(--defaultFont),
+    --primaryColor: var(--primaryColor),
+    --titleColor: var(--titleColor),
+    --labelColor: var(--labelColor),
+    --whithColor: var(--whithColor),
+    --errorColor: var(--errorColor),
+    --activeColor: var(--activeColor),
+    --alertColor: var(--alertColor)
+
+)

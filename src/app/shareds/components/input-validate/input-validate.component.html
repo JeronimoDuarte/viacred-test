@@ -1,0 +1,22 @@
+<div id="componentsForm"
+    class="form-group"
+    [class.has-success]="hasSuccess()"
+    [class.has-error]="hasError()"
+>
+    <label
+      class="control-label sr-only"
+      for="inputSuccess">
+      {{label}}
+  </label>
+  <span class="help-block">
+      <i *ngIf="hasSuccess()" class="mdi mdi-check text-success"></i>
+      <i *ngIf="hasError()"   class="mdi mdi-alert-circle warning-text text-warning"></i>
+  </span>
+  <ng-content></ng-content>
+  <span
+    class="help-block error-message"
+    *ngIf="hasError()"
+  >
+    {{errorMessage}}
+  </span>
+  </div>

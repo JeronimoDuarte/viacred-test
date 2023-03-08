@@ -1,0 +1,33 @@
+<div class="card-consultation">
+  <h4>Situação cadastral</h4>
+  <span>Consulta na receita federal</span>
+  <ul class="informations">
+    <li>
+        <div class="item-information">
+            <div class="icon">
+                <i class="material-icons">person</i>
+            </div>
+            <div class="information">
+                <p>
+                    <span>Nome</span> <br>
+                   {{person?.name}}
+                </p>
+            </div>
+          </div> 
+    </li>
+    <li>
+        <div class="item-information">
+            <div class="icon">
+                <i class="material-icons" [ngClass]="person?.situation ? 'active': 'inactive' ">check_circle</i>
+            </div>
+            <div class="information">
+                <p>
+                    <span>Nome</span> <br>
+                   {{person?.situation}}
+                </p>
+            </div>
+          </div> 
+    </li>
+  </ul>
+     
+</div>

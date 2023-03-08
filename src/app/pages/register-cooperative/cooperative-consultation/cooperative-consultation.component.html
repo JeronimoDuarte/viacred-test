@@ -1,0 +1,37 @@
+<content-body>
+    <div class="step-bar-consultation">
+        <app-stepper-bar [listStepper]="listStepper"></app-stepper-bar>
+    </div>
+    <div class="content">
+        <article>
+            <h3>
+                Informe o CPF do futuro cooperado (a)
+            </h3>
+            <p>
+                Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+                <br>
+                Digite apenas os números (sem pontos ou traços).
+            </p>
+        </article>
+        <form [formGroup]="register">
+            <div class="consult-cpf">
+               
+                <input type="text" formControlName="cpf" mask="000.000.000-00">
+                <button [disabled]="register.invalid"
+                    [ngClass]="register.invalid || register.value.cpf.length < 11 ? 'disable' : ''"
+                    (click)="getPerson()"
+                >
+                    Consultar CPF
+                </button>
+            </div>
+            <div class="invalid-data" >
+                <span *ngIf="register.get('cpf')?.getError('cpfNotValid')">
+                    Informe um cpf válido.
+                </span>
+                
+            </div>
+
+        </form>
+        <app-card-consultation *ngIf="person && person.name" [person]="person"></app-card-consultation>
+    </div>
+</content-body>

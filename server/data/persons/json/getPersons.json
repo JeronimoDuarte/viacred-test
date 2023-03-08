@@ -1,0 +1,34 @@
+{
+    "data": {
+        "persons": [
+            {
+                "id": 1,
+                "cpf": "01495030083",
+                "situation": "regular",
+                "name": "Tiago Jerônimo Duarte",
+                "client": false
+            },
+            { 
+                "id": 1, 
+                "cpf": "96345884090", 
+                "situation": "regular", 
+                "name": "Pedro de Alcantara", 
+                "client": false 
+            },
+            { 
+                "id": 1, 
+                "cpf": "56800167029", 
+                "situation": "regular", 
+                "name": "Mario Sergio Cortela", 
+                "client": false 
+            },
+            { 
+                "id": 1, 
+                "cpf": "74734757038", 
+                "situation": "regular", 
+                "name": "Maria Joana Dark", 
+                "client": false 
+            }
+        ]
+    }
+}

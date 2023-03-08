@@ -1,0 +1,63 @@
+.stepper-consultation{
+    position: relative;
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    .step-bar {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-width: 50%;
+        width: 50%;
+        li {
+            flex: 1;
+            text-align: center;
+            position: relative;
+         
+          &::before{
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            background-color: #ccc; 
+        }
+    
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 100%;
+            transform: translateX(-50%);
+            width: calc(100% - 20px);
+            height: 2px;
+            background-color: #C6CED1;
+          }
+          &:last-child:after{
+            display: none;
+          } 
+        }
+        .active{ 
+            &:after{
+                left: 102%;  
+            }       
+            &:before{
+                background-color: transparent;
+                border: 3px solid #165C7D;
+            }      
+        }
+      }
+}
+
+  
+
+  
+
+ 
+  
+  
