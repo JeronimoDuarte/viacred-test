@@ -14,11 +14,8 @@ RUN npm install -g @angular/cli@14.2.0
 
 COPY . /app
 
-#RUN npm run build --prod
+#RUN npm run build
 RUN ng build
-
-RUN npm run mock:server
-
 
 # Stage 2  -- Run in nginx
 
