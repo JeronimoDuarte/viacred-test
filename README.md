@@ -18,3 +18,15 @@ Para rodar este teste siga os seguintes passos:
   b) npm install
   # rodar fake api
   c) npm run mock:server
+
+
+
+  # RODANDO FRONTEND SEM DOCKER
+  a) tendo o nodejs instalado execute no terminal o seguinte comando:
+     npm install -g @angular/cli@14.2.0
+  b) pelo terminal vá até o diretório viacred-test e execute o seguinte comando:
+     npm install
+  c) para rodar o frontend e poder abrir no navegador, pelo terminal, ainda dentro do diretório viacred-test execute o comando:
+   ng serve
+   - Você pode acessar a página pela url http://localhost:4200
+  
